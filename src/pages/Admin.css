@@ -1,0 +1,50 @@
+/* Admin page custom styles */
+.admin-container {
+  background: linear-gradient(to right, #f7f9fc, #e9f0f8);
+  min-height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.admin-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+.admin-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  animation: slideIn 0.5s ease;
+}
+
+.admin-title {
+  font-weight: bold;
+  font-size: 28px;
+  color: #343a40;
+}
+
+.admin-table th {
+  background-color: #2c3e50 !important;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.admin-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

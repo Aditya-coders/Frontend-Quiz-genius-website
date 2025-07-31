@@ -1,0 +1,107 @@
+/* Navbar.css */
+
+/* Base Navbar Styling */
+.navbar-genius {
+  background: linear-gradient(to right, #141e30, #243b55);
+  border-radius: 12px;
+  margin: 2px auto;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Brand Styling */
+.navbar-genius-brand {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #024809;
+  text-shadow: 1px 1px 8px rgba(1, 39, 38, 0.893);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.navbar-genius-brand:hover {
+  transform: scale(1.05);
+}
+
+/* Menu Styling */
+.navbar-genius-menu .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-genius-menu .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  background-color: #4ef037;
+  transition: 0.4s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-genius-menu .nav-link:hover {
+  color: #4ef037;
+  transform: translateY(-2px);
+}
+
+.navbar-genius-menu .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Logout Button */
+.navbar-genius-logout {
+  margin-left: 12px;
+  border: 1px solid #4ef037;
+  color: #fff;
+  background-color: transparent;
+  transition: 0.3s ease;
+  box-shadow: 0 0 6px rgba(78, 240, 55, 0.4);
+}
+
+.navbar-genius-logout:hover {
+  background-color: #4ef037;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(78, 240, 55, 0.7);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .navbar-genius {
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .navbar-genius-menu .nav-link {
+    margin: 5px 0;
+    padding: 8px 16px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+  }
+
+  .navbar-genius-logout {
+    display: block;
+    width: 100%;
+    margin: 8px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

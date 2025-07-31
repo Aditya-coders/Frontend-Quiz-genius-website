@@ -1,0 +1,63 @@
+/* Footer Container */
+.quiz-footer {
+  background-color: #0f172a;
+  color: #dbeafe;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Titles */
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+/* Description and Tags */
+.footer-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+.footer-tags {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 10px;
+}
+
+/* Divider */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Links */
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-links a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+/* Responsive Layout Enhancements */
+@media (max-width: 767px) {
+  .footer-title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .footer-desc, .footer-tags, .footer-links, .footer-links li, .footer-links a, .quiz-footer p {
+    text-align: center;
+  }
+}
+
+
+.footer-container {
+  margin: 0px 12px 0px 12px;
+}

@@ -1,0 +1,109 @@
+/* QuizPage.css */
+
+/* Background & Container */
+.quiz-container {
+  max-width: 700px;
+  background: #f8fafc; /* very light blue-gray */
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none; /* prevent accidental text selection */
+}
+
+/* Title */
+.quiz-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #0d6efd; /* Bootstrap primary */
+  text-shadow: 1px 1px 4px rgba(13, 110, 253, 0.3);
+}
+
+/* Start Card */
+.quiz-start-card {
+  background: #fff;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease;
+}
+
+.quiz-start-card:hover {
+  box-shadow: 0 4px 20px rgba(13, 110, 253, 0.25);
+}
+
+/* Inputs focus */
+.form-control:focus {
+  border-color: #0d6efd !important;
+  box-shadow: 0 0 8px rgba(13, 110, 253, 0.3) !important;
+  outline: none;
+}
+
+/* Question Card */
+.quiz-question {
+  background: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.quiz-question:hover {
+  box-shadow: 0 4px 30px rgba(13, 110, 253, 0.15);
+}
+
+/* Radio Buttons */
+.form-check-input {
+  cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Buttons */
+.btn-primary {
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 0.6rem 1.5rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 4px 15px rgba(11, 94, 215, 0.4);
+}
+
+.btn-success {
+  font-size: 1.1rem;
+  border-radius: 30px;
+  padding: 0.75rem 1.8rem;
+  box-shadow: 0 3px 8px rgba(25, 135, 84, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #198754cc;
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.6);
+}
+
+/* Disabled buttons */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Time badge */
+.badge {
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .quiz-container {
+    padding: 1rem 1.5rem;
+    max-width: 100%;
+  }
+}

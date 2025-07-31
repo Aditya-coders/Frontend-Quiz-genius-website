@@ -1,0 +1,138 @@
+/* Fix root scrolling issue */
+/* html, body {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+} */
+
+/* Ensure the container can grow beyond screen height */
+/* .dashboard-myquizzes-container {
+  min-height: 100vh;
+  box-sizing: border-box;
+} */
+
+
+
+
+
+
+
+/* Scoped styling for MyQuizzes component */
+.dashboard-myquizzes-container {
+  padding: 30px;
+  max-width: 100%;
+  background: #f9fbfc;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.dashboard-myquizzes-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.dashboard-myquizzes-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dashboard-myquizzes-input {
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-myquizzes-selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.dashboard-myquizzes-selects select,
+.dashboard-myquizzes-selects button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dashboard-myquizzes-selects button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+}
+
+.dashboard-myquizzes-selects button:hover {
+  background-color: #0b5ed7;
+}
+
+.dashboard-myquizzes-empty {
+  font-style: italic;
+  color: #888;
+}
+
+/* ✅ Finalized Scrollable Table Wrapper */
+.dashboard-myquizzes-table-wrapper {
+  max-height: 75vh;              /* Limit height to 1.5 pages */
+  overflow-y: auto;              /* Enable vertical scroll */
+  overflow-x: auto;              /* Enable horizontal scroll if needed */
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  scrollbar-width: thin;         /* Firefox scroll appearance */
+  scrollbar-color: #ccc transparent;
+}
+
+/* WebKit scrollbar styling */
+.dashboard-myquizzes-table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dashboard-myquizzes-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.dashboard-myquizzes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.dashboard-myquizzes-table th,
+.dashboard-myquizzes-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.dashboard-myquizzes-table th {
+  background-color: #f1f5f9;
+  color: #333;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-myquizzes-selects {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-myquizzes-input {
+    width: 100%;
+  }
+}

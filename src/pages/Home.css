@@ -1,0 +1,122 @@
+/* Home.css - Enhanced for Home.jsx */
+
+.home-genius-container {
+  /* background: linear-gradient(135deg, #0f172a, #1e293b, #334155); */
+  /* background: linear-gradient(135deg, #0a1e40, #112a57, #1b3b7a); */
+  background: linear-gradient(to right, #1e6076, #1b647d);
+  /* background: linear-gradient(135deg, #0f4293f1, #0f4293f1, #0f4293f1); */
+
+  min-height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+/* Content wrapper */
+.home-genius-content {
+  max-width: 1140px;     /* ⬅️ Or use 100% for full width */
+  margin: 0 auto;
+  padding: 20px;         /* ⬅️ Optional: tweak for tighter spacing */
+}
+
+/* Responsive heading */
+.home-genius-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 6px #000;
+  letter-spacing: 1px;
+  padding: 0 1rem; /* Prevent overflow on small screens */
+}
+
+
+
+.home-genius-heading span {
+  color: #38bdf8; /* Tailwind's sky-400 */
+  text-shadow: 0 0 12px #38bdf8, 0 0 28px rgba(56, 189, 248, 0.5);
+}
+
+.quiz-card-genius {
+  background: rgba(6, 64, 93, 0.9); /* deep teal-blue with opacity */
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1.5px solid rgba(6, 64, 93, 0.8);
+  color: #d0e8ff; /* soft light blue text */
+  box-shadow: 0 10px 25px rgba(0, 50, 100, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.quiz-card-genius:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow:
+    0 0 8px 2px rgba(2, 158, 255, 0.7),  /* neon outer glow */
+    0 0 20px 6px rgba(2, 158, 255, 0.4),
+    0 10px 30px rgba(2, 158, 255, 0.6);
+  background: rgba(2, 58, 101, 0.95);
+  border-color: rgba(2, 158, 255, 0.9);
+}
+
+
+/* Quiz title inside card */
+.quiz-card-genius-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+/* Start button */
+.quiz-card-genius-btn {
+  align-self: flex-start;
+  background-color: #38bdf8;
+  color: #000;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-weight: 600;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.quiz-card-genius-btn:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+  box-shadow: 0 6px 25px rgba(56, 189, 248, 0.5);
+  transform: translateY(-2px);
+}
+
+
+
+.animated-heading {
+  animation: popIn3D 1.2s ease-out forwards, floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.home-genius-heading span {
+
+  color: #d1dee5;
+text-shadow: 0 0 12px #088bcd99, 0 0 28px rgba(223, 227, 231, 0.112);
+
+
+
+}
